@@ -68,7 +68,7 @@ portfolio_levels <- portfolio_levels %>%
 #| label: IL-2
 
 ## Fill in the line below with your self-assigned level for this objective.
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -80,6 +80,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+For the Week 3 Shiny Project, I found the base code for our server, ui, and global files on [RStudios gallery](https://shiny.posit.co/r/gallery/start-simple/word-cloud/) of Shiny apps. Furthermore, I relied on ChatGTP to support some of my changes to modifying the base code. For example, I noticed that my word cloud plot cut off words when the size or amount of words exceeded some limit. I queried "my plot gets cutt off when too many words are allowed in my word cloud" after providing my code, and ChatGPT provided three solutions. I recognized that one of them was impossible, and after testing the remaining two found that only one of them solved my issue, but solve it did!
 
 ------------------------------------------------------------------------
 
