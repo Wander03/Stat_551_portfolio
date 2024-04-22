@@ -68,7 +68,7 @@ portfolio_levels <- portfolio_levels %>%
 #| label: IL-2
 
 ## Fill in the line below with your self-assigned level for this objective.
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -80,6 +80,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+For the Week 3 Shiny Project, I found the base code for our server, ui, and global files on [RStudios gallery](https://shiny.posit.co/r/gallery/start-simple/word-cloud/) of Shiny apps. Furthermore, I relied on ChatGTP to support some of my changes to modifying the base code. For example, I noticed that my word cloud plot cut off words when the size or amount of words exceeded some limit. I queried "my plot gets cutt off when too many words are allowed in my word cloud" after providing my code, and ChatGPT provided three solutions. I recognized that one of them was impossible, and after testing the remaining two found that only one of them solved my issue, but solve it did!
 
 ------------------------------------------------------------------------
 
@@ -199,7 +201,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: TC-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -211,6 +213,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+For Lab 1, I was the sole contributor to Part 1, the [Q-Q Plot custom function](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/pull/3#issue-2228813761). This involved creating a custom Q-Q Plotting function and testing it with the cars dataset. My function not only includes comments detailing what each of the following line(s) of code do, but additionally has an [overview comment](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/pull/5). The overview comment lists what data types each input is required to be along with what the output of the function is.
 
 ------------------------------------------------------------------------
 
@@ -372,7 +376,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: PV-3
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -384,6 +388,10 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+\[ADD JUSTIFICATION FOR GGANIMATE WHEN YOU USE IT (I KNOW YOU WILL USE IT FUTURE ME\]
+
+For Lab 2, although I created the 2nd Visualization, I was the first to [create my graph](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37). For my team I pioneered the use of {ggirafe}, picking out how to create pop-up labels when hovering over data points and format them nicely. Looking at Katherines contributes later, you can see the same general formatting for [her use](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/18/commits/cd8b30c4b1b6a1803994a51dd4bd50f07a5d5c6d) of {ggirafe}. Additionally, I [improved upon the leaflet](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/23/commits/92e2348539c67414c64048518dffebfdfd1fb5bb) Kai created, adding labels on hover and setting the initial View.
 
 ------------------------------------------------------------------------
 
