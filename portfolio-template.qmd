@@ -376,7 +376,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: PV-3
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -388,6 +388,10 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+\[ADD JUSTIFICATION FOR GGANIMATE WHEN YOU USE IT (I KNOW YOU WILL USE IT FUTURE ME\]
+
+For Lab 2, although I created the 2nd Visualization, I was the first to [create my graph](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37). For my team I pioneered the use of {ggirafe}, picking out how to create pop-up labels when hovering over data points and format them nicely. Looking at Katherines contributes later, you can see the same general formatting for [her use](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/18/commits/cd8b30c4b1b6a1803994a51dd4bd50f07a5d5c6d) of {ggirafe}. Additionally, I [improved upon the leaflet](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/23/commits/92e2348539c67414c64048518dffebfdfd1fb5bb) Kai created, adding labels on hover and setting the initial View.
 
 ------------------------------------------------------------------------
 
