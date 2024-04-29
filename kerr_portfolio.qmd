@@ -111,7 +111,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-Look no further than this portfolios [github page](https://github.com/Wander03/Stat_551_portfolio) itself! Here you can see evidence of creating my own repo, then [forking and pull requesting](https://github.com/Wander03/Stat_551_portfolio/network) in a neat, orderly, manner. A beautiful example of cloning occurred during the [Shiny Project](https://github.com/keasley8/Project_1_Shiny), which is wonderfully organized into a "data" folder and a "app" folder housing our notebooks (named fake_news). Within this folder itself you can find examples of the {here} package being used within the [global notebook](https://github.com/keasley8/Project_1_Shiny/blob/main/fake_news/global.R), aiming at the "data" folder and then the necessary data set file.
+Look no further than this portfolios [github page](https://github.com/Wander03/Stat_551_portfolio) itself! Here you can see evidence of creating my own repo, then [forking and pull requesting](https://github.com/Wander03/Stat_551_portfolio/network) in a neat, orderly, manner. A beautiful example of cloning occurred during the [Shiny Project](https://github.com/keasley8/Project_1_Shiny), which is wonderfully organized into a "data" folder and a "app" folder housing our R scripts (named fake_news). Within this folder itself you can find examples of the {here} package being used within the [global notebook](https://github.com/keasley8/Project_1_Shiny/blob/main/fake_news/global.R), aiming at the "data" folder and then the necessary data set file.
 
 ------------------------------------------------------------------------
 
