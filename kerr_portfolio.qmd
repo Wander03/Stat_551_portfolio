@@ -414,7 +414,7 @@ For Lab 2, although I created the 2nd Visualization, I was the first to [create 
 #| include: false
 #| label: PV-4
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -426,6 +426,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Well this is just asking to link all of the Shiny Project, so I will! I layed the foundations for my groups shiny app as seen in the following [pull request](https://github.com/keasley8/Project_1_Shiny/pull/4). Although much of this code was from the the RStudios gallery (as noted in IL-2), I made substantial edits scattered throughout my [following pull requests](https://github.com/keasley8/Project_1_Shiny/pulls?q=is%3Apr+is%3Aclosed) to the ui, server, and global files. Regarding [reactivity](https://github.com/keasley8/Project_1_Shiny/blob/main/fake_news/server.R), my word cloud plot waits for the user to select a category to filter on then press a button before updating. This functionality was expanded to the two additional plots my group mates created. We ran into an error with there plots where the titles would update prior to the "change" button being pressed. To solve this issue, we used eventReactive to store the title so it would wait until the button was pressed.
 
 ------------------------------------------------------------------------
 
