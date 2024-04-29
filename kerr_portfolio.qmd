@@ -220,7 +220,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-For Lab 1, I was the sole contributor to Part 1, the [Q-Q Plot custom function](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/pull/3#issue-2228813761). This involved creating a custom Q-Q Plotting function and testing it with the cars dataset. My function not only includes comments detailing what each of the following line(s) of code do, but additionally has an [overview comment](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/pull/5). The overview comment lists what data types each input is required to be along with what the output of the function is.
+For Lab 1, I was the sole contributor to Part 1, the [Q-Q Plot custom function](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/pull/3#issue-2228813761). This involved creating a custom Q-Q Plotting function and testing it with the cars dataset. My function not only includes comments detailing what each of the following line(s) of code do, but additionally has an [overview comment](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/pull/5). The overview comment lists what data types each input is required to be along with what the output of the function is. For another example, see my [get_passes function from lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/blob/master/main.qmd) (as mentioned in RW-3).
 
 ------------------------------------------------------------------------
 
