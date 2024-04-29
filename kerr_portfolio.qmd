@@ -124,7 +124,7 @@ Look no further than this portfolios [github page](https://github.com/Wander03/S
 #| include: false
 #| label: RW-2
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -136,6 +136,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+The [practice lab](https://github.com/Cal-Poly-Advanced-R/practice-lab-Wander03/blob/master/practice-lab.qmd) is the all-in-one assignment with a variety of different chunk options decorating the Quarto file. From echo, to error, to message, it has it all! Although it has wonderful labels as well, lets look to lab 1 for examples of this. Specifically, [part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.qmd) does a perfect job with the label chunk option naming each chunk appropriately (it even has warning and message options added as needed). Additionally, we can see the [rendered output for part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.html), and part 1 if you want it, presenting the fruits of our labor (minus the chunk labels, those are hidden away).
 
 ------------------------------------------------------------------------
 
