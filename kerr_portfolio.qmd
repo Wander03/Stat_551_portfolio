@@ -150,7 +150,7 @@ The [practice lab](https://github.com/Cal-Poly-Advanced-R/practice-lab-Wander03/
 #| include: false
 #| label: RW-3
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -161,7 +161,9 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification:
+
+My code, especially my functions, include comments (almost) line by line, as well as an overall comment describing the inputs and outputs of the function as a whole. A fresh example (at the time of writing this) is from lab 4 (where did lab 3 go? who knows!). Within this [pull request](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files), lines 65 to 155 contain parts of a helper function I wrote. The aforementioned pull request shows my addition of comments so my group mates, and others, can understand the logic of my function. Later on in a [separate pull request](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/7/commits/f627bd450f2da77f9de80d84c823b40614d3894e) I added an overall header to said function!
 
 ------------------------------------------------------------------------
 
