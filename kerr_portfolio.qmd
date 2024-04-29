@@ -98,7 +98,7 @@ For the Week 3 Shiny Project, I found the base code for our server, ui, and glob
 #| include: false
 #| label: RW-1
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -110,6 +110,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Look no further than this portfolios [github page](https://github.com/Wander03/Stat_551_portfolio) itself! Here you can see evidence of creating my own repo, then [forking and pull requesting](https://github.com/Wander03/Stat_551_portfolio/network) in a neat, orderly, manner. A beautiful example of cloning occurred during the [Shiny Project](https://github.com/keasley8/Project_1_Shiny), which is wonderfully organized into a "data" folder and a "app" folder housing our notebooks (named fake_news). Within this folder itself you can find examples of the {here} package being used within the [global notebook](https://github.com/keasley8/Project_1_Shiny/blob/main/fake_news/global.R), aiming at the "data" folder and then the necessary data set file.
 
 ------------------------------------------------------------------------
 
