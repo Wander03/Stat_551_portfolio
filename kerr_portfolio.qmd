@@ -263,7 +263,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: DM-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -275,6 +275,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Once again we return to [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/blob/master/main.qmd)! The first chunk (lines 23 to 56), after package load in, contains the code for reading, wrangling, and joining the two data sets used. We used select, mutate, and rename to wrangle the data (neither of which were in a csv!), then an inner join to combine the two data sets (this could have also been done in a left or right join, however an inner join keeps only observations that appear in both data sets). The next chunk (lines 179 to 198) has an example of the map function in action as well as a pivot wider! Fun aside, for mastery so I guess not so much an aside, in [this commit](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/commits/d64f13342d2ebd13e9ec87ded1a7c244513a9d46) you can see how I replaced the superseded pmap_dfr function, which I originally used, with the map function.
 
 ------------------------------------------------------------------------
 
