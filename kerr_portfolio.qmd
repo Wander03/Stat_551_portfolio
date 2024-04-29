@@ -286,7 +286,7 @@ Once again we return to [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-usi
 
 ```{r, include = FALSE}
 ## Fill in the line below with your self-assigned level for this objective.
-my_level <- 0
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(tibble(Objective = "DM-3", 
@@ -295,7 +295,9 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification:
+
+So far we have only handled API uses twice, once in a check in and once in lab 4. The final question for "Check-Ins: New Data Sources" required us to connect and use the same API as lab 4. While I do not have the code I used anymore, since it was in the console, I have the proof of my correct response to show that I correctly called the API and converted the JSON object. For [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/blob/master/main.qmd), my group did this section collaboratively as a group (lines 92 to 133). This code ended up being a part of the function I wrote, crafting an API call for each state, checking the success of the API call, then transforming the JSON to a data frame.
 
 ------------------------------------------------------------------------
 
