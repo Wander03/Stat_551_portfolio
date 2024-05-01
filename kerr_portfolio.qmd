@@ -183,7 +183,7 @@ My code, especially my functions, include comments (almost) line by line, as wel
 #| include: false
 #| label: TC-1
 
-my_level <- 1
+my_level <- 2
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -195,6 +195,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+The only example I can think of for this (so far) is the [overview document](https://github.com/keasley8/Project_1_Shiny/blob/main/STAT541%20Project%20Workspace.docx) submitted with the Shiny Project. In this document, we summarize our data, data cleaning process, our files, and finally our app itself. Within the summary of the app, I summarized my contributions (which in turn were my contributions to this project)!
 
 ------------------------------------------------------------------------
 
@@ -332,13 +334,14 @@ portfolio_levels <- portfolio_levels %>%
 
 -   I can use less common geometries, including those from ggplot extension packages.
 -   I can use the correct aesthetics to map variables
--   I understand how geometries inherit aesthetics I can add annotations to my plot
+-   I understand how geometries inherit aesthetics
+-   I can add annotations to my plot
 
 ```{r}
 #| include: false
 #| label: PV-1
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -351,6 +354,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
+The perfect example of this learning objective can be found in lab 2! My contributions were on [visualization 2](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37), where I used {ggplot} and {ggrafe} to improve a scatter plot. In my graph code (lines 150 to 192) we can see how I defined the aesthetics for my graph in the ggplot() function at the beginning, then took advantage of this in geom_smooth().
+
 ------------------------------------------------------------------------
 
 ## \[PV-2\] ggplot: theme
@@ -362,7 +367,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: PV-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -374,6 +379,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Let us return to lab 2 from the previous learning objective. In [visualization 2](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37), we can see the wonderful title and subtitle I gave my plot, with the removal of the axis labels. In the theme() function I modified the text type and size of these aspects, while in the scale_x/y_continuous() functions I added percentage signs (because my axis variables are percents!). I have a few additional changes in my theme() function editing the major and minor grid lines to make the graph more pleasing to view while keeping the usefulness of a line to compare points to.
 
 ------------------------------------------------------------------------
 
@@ -683,7 +690,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-4
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -695,6 +702,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+[My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) to call the API in lab 4 (lines 61 to 134) ticks all of the boxes for this learning objective. It beings with stopping conditions for each parameter to ensure the correct data type is being inputted (added in a [later pull request](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/7/files)). Then, depending on the output from the API all the function might increase the hours value and recall the API (increasing retry_count by 1), retry the API if an error occurred (also increasing retry_count by 1), or having collected the correct information return the output. This occurs in a while loop, and can continue until retry_count equals the input parameter max_retries, the hours parameter equals 72, or the correct information is obtained and returned. Additionally, since 72 hours is the max hours the API can handle, I have a case_when() function checking to make sure the hours does not add over 72, and that once 72 hours is checked the function terminates with a message describing why.
 
 ------------------------------------------------------------------------
 
