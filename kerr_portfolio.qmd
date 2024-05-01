@@ -690,7 +690,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-4
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -702,6 +702,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+[My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) to call the API in lab 4 (lines 61 to 134) ticks all of the boxes for this learning objective. It beings with stopping conditions for each parameter to ensure the correct data type is being inputted (added in a [later pull request](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/7/files)). Then, depending on the output from the API all the function might increase the hours value and recall the API (increasing retry_count by 1), retry the API if an error occurred (also increasing retry_count by 1), or having collected the correct information return the output. This occurs in a while loop, and can continue until retry_count equals the input parameter max_retries, the hours parameter equals 72, or the correct information is obtained and returned. Additionally, since 72 hours is the max hours the API can handle, I have a case_when() function checking to make sure the hours does not add over 72, and that once 72 hours is checked the function terminates with a message describing why.
 
 ------------------------------------------------------------------------
 
