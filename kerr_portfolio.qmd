@@ -334,13 +334,14 @@ portfolio_levels <- portfolio_levels %>%
 
 -   I can use less common geometries, including those from ggplot extension packages.
 -   I can use the correct aesthetics to map variables
--   I understand how geometries inherit aesthetics I can add annotations to my plot
+-   I understand how geometries inherit aesthetics
+-   I can add annotations to my plot
 
 ```{r}
 #| include: false
 #| label: PV-1
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -352,6 +353,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+The perfect example of this learning objective can be found in lab 2! My contributions were on [visualization 2](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37), where I used {ggplot} and {ggrafe} to improve a scatter plot. In my graph code (lines 150 to 192) we can see how I defined the aesthetics for my graph in the ggplot() function at the beginning, then took advantage of this in geom_smooth().
 
 ------------------------------------------------------------------------
 
