@@ -667,7 +667,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-3
 
-my_level <- 1
+my_level <- 2
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -679,6 +679,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+I am writing this after I write the below learning objective, so back to lab 4! [My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) I wrote here is actually a helper function for looping through each country. By creating this helper function, my code is much cleaner than it would be otherwise.
 
 ------------------------------------------------------------------------
 
