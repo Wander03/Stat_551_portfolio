@@ -183,7 +183,7 @@ My code, especially my functions, include comments (almost) line by line, as wel
 #| include: false
 #| label: TC-1
 
-my_level <- 1
+my_level <- 2
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -195,6 +195,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+The only example I can think of for this (so far) is the [overview document](https://github.com/keasley8/Project_1_Shiny/blob/main/STAT541%20Project%20Workspace.docx) submitted with the Shiny Project. In this document, we summarize our data, data cleaning process, our files, and finally our app itself. Within the summary of the app, I summarized my contributions (which in turn were my contributions to this project)!
 
 ------------------------------------------------------------------------
 
