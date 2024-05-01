@@ -367,7 +367,7 @@ The perfect example of this learning objective can be found in lab 2! My contrib
 #| include: false
 #| label: PV-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -379,6 +379,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Let us return to lab 2 from the previous learning objective. In [visualization 2](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37), we can see the wonderful title and subtitle I gave my plot, with the removal of the axis labels. In the theme() function I modified the text type and size of these aspects, while in the scale_x/y_continuous() functions I added percentage signs (because my axis variables are percents!). I have a few additional changes in my theme() function editing the major and minor grid lines to make the graph more pleasing to view while keeping the usefulness of a line to compare points to.
 
 ------------------------------------------------------------------------
 
