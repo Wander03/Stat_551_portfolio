@@ -317,7 +317,7 @@ So far we have only handled API uses twice, once in a check in and once in lab 4
 #| include: false
 #| label: DM-4
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -328,7 +328,9 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification:
+
+Oh you bet I can webscrape a table, lets jump over to, what I have dubbed, the [cheese lab](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/blob/main/web-scraping.qmd). My main contribution to this lab was Part 5: gathering specific information on select cheeses. This entailed taking the url of a cheese found in Part 4, then finding the desired information on the page. What gets returned is a lovely data frame, with one column per feature of interest. Now then, not only does my wonderful scraping happen in a function, perfect for a map(), it takes advantage of a helper function to navigate to the desired features using function from rvest(). As a fun feature, I use slice_sample() to randomly select 10 cheeses, so its a surprise every time (I love randomness!), and allow [kable()](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/490813ccf6eec4669397a46eb79c49d19ef65083) to make more visually appealing takes of my scraping.
 
 ------------------------------------------------------------------------
 
