@@ -343,7 +343,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: PV-1
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -356,7 +356,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-The perfect example of this learning objective can be found in lab 2! My contributions were on [visualization 2](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37), where I used {ggplot} and {ggrafe} to improve a scatter plot. In my graph code (lines 150 to 192) we can see how I defined the aesthetics for my graph in the ggplot() function at the beginning, then took advantage of this in geom_smooth().
+The perfect example of this learning objective can be found in lab 2! My contributions were on [visualization 2](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37), where I used {ggplot} and {ggrafe} to improve a scatter plot. In my graph code (lines 150 to 192) we can see how I defined the aesthetics for my graph in the ggplot() function at the beginning, then took advantage of this in geom_smooth(). A last minute addition, talked about more in the generative art section, is my use of geometries in the [generative art lab](https://github.com/Wander03/lab-9-generative-art/commit/493708c3162151a809adfb95ef4a1ebd3d05ac15)! In the first section of this lab I favored geom_violin() and geom_hex() to create my visualization.
 
 ------------------------------------------------------------------------
 
