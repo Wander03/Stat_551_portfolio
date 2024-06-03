@@ -1,6 +1,10 @@
 ---
 title: "Stat 541 Final Portfolio"
-format: html
+format: 
+  html:
+    theme:
+      light: flatly
+      dark: darkly
 editor: visual
 self-contained: true
 toc: true
@@ -652,6 +656,7 @@ portfolio_levels %>%
   labs(x = "Level",
        y = "Percent") +
   theme_bw() +
+  theme(plot.background = element_rect(fill = case_when(theme == "flatly" ~ "white", TRUE ~ "black"))) +
   scale_y_continuous(labels = scales::percent)
 ```
 
