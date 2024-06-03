@@ -615,7 +615,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-3
 
-my_level <- 2
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
