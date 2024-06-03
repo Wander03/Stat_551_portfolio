@@ -128,7 +128,7 @@ Look no further than this portfolios [github page](https://github.com/Wander03/S
 #| include: false
 #| label: RW-2
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -141,7 +141,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-The [practice lab](https://github.com/Cal-Poly-Advanced-R/practice-lab-Wander03/blob/master/practice-lab.qmd) is the all-in-one assignment with a variety of different chunk options decorating the Quarto file. From echo, to error, to message, it has it all! Although it has wonderful labels as well, lets look to lab 1 for examples of this. Specifically, [part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.qmd) does a perfect job with the label chunk option naming each chunk appropriately (it even has warning and message options added as needed). Additionally, we can see the [rendered output for part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.html), and part 1 if you want it, presenting the fruits of our labor (minus the chunk labels, those are hidden away).
+The [practice lab](https://github.com/Cal-Poly-Advanced-R/practice-lab-Wander03/blob/master/practice-lab.qmd) is the all-in-one assignment with a variety of different chunk options decorating the Quarto file. From echo, to error, to message, it has it all! Although it has wonderful labels as well, lets look to lab 1 for examples of this. Specifically, [part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.qmd) does a perfect job with the label chunk option naming each chunk appropriately (it even has warning and message options added as needed). Additionally, we can see the [rendered output for part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.html), and part 1 if you want it, presenting the fruits of our labor (minus the chunk labels, those are hidden away). Jumping over to this portfolio, I have just added the [option for a light or dark mode](https://github.com/Wander03/Stat_551_portfolio/pull/7/commits/c81a811dade0dde83cac7f3d318b58e9dd99399e)! The light mode uses the 'flatly' theme while the dark mode uses 'darkly'. These can be swapped on the rendered html file in the upper right corner when at the top of the file.
 
 ------------------------------------------------------------------------
 
