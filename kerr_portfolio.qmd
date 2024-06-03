@@ -1,6 +1,6 @@
 ---
 title: "Stat 541 Final Portfolio"
-format: pdf
+format: html
 editor: visual
 self-contained: true
 toc: true
@@ -81,7 +81,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-For the Week 3 Shiny Project, I found the base code for our server, ui, and global files on [RStudios gallery](https://shiny.posit.co/r/gallery/start-simple/word-cloud/) of Shiny apps. Furthermore, I relied on ChatGTP to support some of my changes to modifying the base code. For example, I noticed that my word cloud plot cut off words when the size or amount of words exceeded some limit. I queried "my plot gets cutt off when too many words are allowed in my word cloud" after providing my code, and ChatGPT provided three solutions. I recognized that one of them was impossible, and after testing the remaining two found that only one of them solved my issue, but solve it did!
+For the Week 3 Shiny Project, I found the base code for our server, ui, and global files on [RStudios gallery](https://shiny.posit.co/r/gallery/start-simple/word-cloud/) of Shiny apps. Furthermore, I relied on ChatGPT to support some of my changes to modifying the base code. For example, I noticed that my word cloud plot cut off words when the size or amount of words exceeded some limit. I queried "my plot gets cut off when too many words are allowed in my word cloud" after providing my code, and ChatGPT provided three solutions. I recognized that one of them was impossible, and after testing the remaining two found that only one of them solved my issue, but solve it did!
 
 ------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ For the Week 3 Shiny Project, I found the base code for our server, ui, and glob
 #| include: false
 #| label: RW-1
 
-my_level <- 3
+my_level <- 4 
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -241,7 +241,7 @@ For Lab 1, I was the sole contributor to Part 1, the [Q-Q Plot custom function](
 #| include: false
 #| label: DM-1
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -290,7 +290,7 @@ Once again we return to [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-usi
 
 ```{r, include = FALSE}
 ## Fill in the line below with your self-assigned level for this objective.
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(tibble(Objective = "DM-3", 
@@ -301,7 +301,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-So far we have only handled API uses twice, once in a check in and once in lab 4. The final question for "Check-Ins: New Data Sources" required us to connect and use the same API as lab 4. While I do not have the code I used anymore, since it was in the console, I have the proof of my correct response to show that I correctly called the API and converted the JSON object. For [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/blob/master/main.qmd), my group did this section collaboratively as a group (lines 92 to 133). This code ended up being a part of the function I wrote, crafting an API call for each state, checking the success of the API call, then transforming the JSON to a data frame.
+So far we have only handled API uses twice, once in a check in and once in lab 4. The final question for "Check-Ins: New Data Sources" required us to connect and use the same API as lab 4. While I do not have the code I used anymore, since it was in the console, I have the proof of my correct response to show that I correctly called the API and converted the JSON object. For [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/blob/master/main.qmd), my group did this section collaboratively as a group (lines 92 to 133). This code ended up being a part of the function I wrote, crafting an API call for each state, checking the success of the API call, then transforming the JSON to a data frame. Additionally, as the cherry on top, I have added [Sys.sleep()](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/commit/bb302c6f4b47e35a525ca947814ea07e0e1df57a) directly before the API call to ensure we do not overload the API!
 
 ------------------------------------------------------------------------
 
@@ -449,8 +449,7 @@ Well this is just asking to link all of the Shiny Project, so I will! I layed th
 ## \[SD-1\] R programming language details
 
 -   I understand non-standard evaluation (aka "Tidy Eval" or "unquoted objects"), and I can use tunneling in my functions.
--   I understand functional programming, and I can use functions as objects in my code design
--   I understand object-oriented programming, and I can define my own classes and methods.
+-   I understand functional programming, and I can use functions as objects in my code design.
 
 ```{r}
 #| include: false
@@ -497,60 +496,6 @@ portfolio_levels <- portfolio_levels %>%
 
 ------------------------------------------------------------------------
 
-# Matrix Operations (MO):
-
-*These objectives show your ability to manipulate data-related information in the form of vectors and matrices, rather than in high-level data structures.*
-
-------------------------------------------------------------------------
-
-## \[MO-1\] Theory:
-
--   I understand the difference between ordinary multiplication and matrix multiplication, and how to implement each in R
--   I can implement and briefly explain the matrix equations for multiple linear regression
-
-```{r}
-#| include: false
-#| label: MO-1
-
-my_level <- 1
-
-portfolio_levels <- portfolio_levels %>%
-  bind_rows(
-    tibble(Objective = "MO-1", 
-           Level = my_level)
-    )
-```
-
-### Level: `r my_level`
-
-### Justification:
-
-------------------------------------------------------------------------
-
-## \[MO-2\] Object structures:
-
--   I can convert data objects into the necessary matrix structures to perform operations on them.
--   I can convert results of matrix operations to convenient data analysis formats
-
-```{r}
-#| include: false
-#| label: MO-2
-
-my_level <- 1
-
-portfolio_levels <- portfolio_levels %>%
-  bind_rows(
-    tibble(Objective = "MO-2", 
-           Level = my_level)
-    )
-```
-
-### Level: `r my_level`
-
-### Justification:
-
-------------------------------------------------------------------------
-
 # Algorithms and Iteration (AI):
 
 *These objectives ask you to design code-based approaches to statistical computing problems, usually involving iteration to a stopping condition.*
@@ -560,16 +505,17 @@ portfolio_levels <- portfolio_levels %>%
 ## \[AI-1\] Creating an algorithm:
 
 -   I can invent and implement my own iterative algorithm.
+-   I have built in checks for possible problems or extreme cases in the algorithm.
 
 ```{r}
 #| include: false
 #| label: AI-1
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
-    tibble(Objective = "AI-1", 
+    tibble(Objective = "CD-4", 
            Level = my_level)
     )
 ```
@@ -577,6 +523,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+[My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) to call the API in lab 4 (lines 61 to 134) ticks all of the boxes for this learning objective. It beings with stopping conditions for each parameter to ensure the correct data type is being inputted (added in a [later pull request](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/7/files)). Then, depending on the output from the API all the function might increase the hours value and recall the API (increasing retry_count by 1), retry the API if an error occurred (also increasing retry_count by 1), or having collected the correct information return the output. This occurs in a while loop, and can continue until retry_count equals the input parameter max_retries, the hours parameter equals 72, or the correct information is obtained and returned. Additionally, since 72 hours is the max hours the API can handle, I have a case_when() function checking to make sure the hours does not add over 72, and that once 72 hours is checked the function terminates with a message describing why.
 
 ------------------------------------------------------------------------
 
@@ -681,33 +629,6 @@ portfolio_levels <- portfolio_levels %>%
 ### Justification:
 
 I am writing this after I write the below learning objective, so back to lab 4! [My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) I wrote here is actually a helper function for looping through each country. By creating this helper function, my code is much cleaner than it would be otherwise.
-
-------------------------------------------------------------------------
-
-## \[CD-4\] Algorithmic process:
-
--   My loops are clean and efficient
--   Proper values are calculated to update objects and/or determine stopping conditions
--   I have built in checks for possible problems or extreme cases in the algorithm
-
-```{r}
-#| include: false
-#| label: CD-4
-
-my_level <- 4
-
-portfolio_levels <- portfolio_levels %>%
-  bind_rows(
-    tibble(Objective = "CD-4", 
-           Level = my_level)
-    )
-```
-
-### Level: `r my_level`
-
-### Justification:
-
-[My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) to call the API in lab 4 (lines 61 to 134) ticks all of the boxes for this learning objective. It beings with stopping conditions for each parameter to ensure the correct data type is being inputted (added in a [later pull request](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/7/files)). Then, depending on the output from the API all the function might increase the hours value and recall the API (increasing retry_count by 1), retry the API if an error occurred (also increasing retry_count by 1), or having collected the correct information return the output. This occurs in a while loop, and can continue until retry_count equals the input parameter max_retries, the hours parameter equals 72, or the correct information is obtained and returned. Additionally, since 72 hours is the max hours the API can handle, I have a case_when() function checking to make sure the hours does not add over 72, and that once 72 hours is checked the function terminates with a message describing why.
 
 ------------------------------------------------------------------------
 
