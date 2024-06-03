@@ -128,7 +128,7 @@ Look no further than this portfolios [github page](https://github.com/Wander03/S
 #| include: false
 #| label: RW-2
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -141,7 +141,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-The [practice lab](https://github.com/Cal-Poly-Advanced-R/practice-lab-Wander03/blob/master/practice-lab.qmd) is the all-in-one assignment with a variety of different chunk options decorating the Quarto file. From echo, to error, to message, it has it all! Although it has wonderful labels as well, lets look to lab 1 for examples of this. Specifically, [part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.qmd) does a perfect job with the label chunk option naming each chunk appropriately (it even has warning and message options added as needed). Additionally, we can see the [rendered output for part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.html), and part 1 if you want it, presenting the fruits of our labor (minus the chunk labels, those are hidden away).
+The [practice lab](https://github.com/Cal-Poly-Advanced-R/practice-lab-Wander03/blob/master/practice-lab.qmd) is the all-in-one assignment with a variety of different chunk options decorating the Quarto file. From echo, to error, to message, it has it all! Although it has wonderful labels as well, lets look to lab 1 for examples of this. Specifically, [part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.qmd) does a perfect job with the label chunk option naming each chunk appropriately (it even has warning and message options added as needed). Additionally, we can see the [rendered output for part 2](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part2.html), and part 1 if you want it, presenting the fruits of our labor (minus the chunk labels, those are hidden away). Jumping over to this portfolio, I have just added the [option for a light or dark mode](https://github.com/Wander03/Stat_551_portfolio/pull/7/commits/c81a811dade0dde83cac7f3d318b58e9dd99399e)! The light mode uses the 'flatly' theme while the dark mode uses 'darkly'. These can be swapped on the rendered html file in the upper right corner when at the top of the file.
 
 ------------------------------------------------------------------------
 
@@ -317,7 +317,7 @@ So far we have only handled API uses twice, once in a check in and once in lab 4
 #| include: false
 #| label: DM-4
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -328,7 +328,9 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification:
+
+Oh you bet I can webscrape a table, lets jump over to, what I have dubbed, the [cheese lab](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/blob/main/web-scraping.qmd). My main contribution to this lab was Part 5: gathering specific information on select cheeses. This entailed taking the url of a cheese found in Part 4, then finding the desired information on the page. What gets returned is a lovely data frame, with one column per feature of interest. Now then, not only does my wonderful scraping happen in a function, perfect for a map(), it takes advantage of a helper function to navigate to the desired features using function from rvest(). As a fun feature, I use slice_sample() to randomly select 10 cheeses, so its a surprise every time (I love randomness!), and allow [kable()](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/490813ccf6eec4669397a46eb79c49d19ef65083) to make more visually appealing takes of my scraping.
 
 ------------------------------------------------------------------------
 
