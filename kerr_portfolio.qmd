@@ -423,7 +423,7 @@ For Lab 2, although I created the 2nd Visualization, I was the first to [create 
 #| include: false
 #| label: PV-4
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
