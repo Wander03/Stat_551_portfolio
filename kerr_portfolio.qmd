@@ -461,7 +461,7 @@ Well this is just asking to link all of the Shiny Project, so I will! I layed th
 #| include: false
 #| label: SD-1
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -473,6 +473,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+I had never used tunneling prior to creating my funtion for my groups R package, however I now love tunneling since it allows me to pass in the name of a column without putting it in quotation marks! Scattered throughout my function and helper function you can see [examples](https://github.com/Wander03/stateasy/blob/main/R/slr.R) of my usage of tunneling, for the best example I would like to draw your attention to the create_scatter_plot() function, specifically the ggplot() code within it. Additionally this code has two helper function: create_scatter_plot() and test_assumptions(). The first is used to, well, create a scatter plot in my main function while the latter is used to test model assumptions, returning the necessary plots.
 
 ------------------------------------------------------------------------
 
