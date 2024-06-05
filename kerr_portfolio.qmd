@@ -474,7 +474,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-I had never used tunneling prior to creating my funtion for my groups R package, however I now love tunneling since it allows me to pass in the name of a column without putting it in quotation marks! Scattered throughout my function and helper function you can see [examples](https://github.com/Wander03/stateasy/blob/main/R/slr.R) of my usage of tunneling, for the best example I would like to draw your attention to the create_scatter_plot() function, specifically the ggplot() code within it. Additionally this code has two helper function: create_scatter_plot() and test_assumptions(). The first is used to, well, create a scatter plot in my main function while the latter is used to test model assumptions, returning the necessary plots.
+I had never used tunneling prior to creating my function for my groups R package, however I now love tunneling since it allows me to pass in the name of a column without putting it in quotation marks! Scattered throughout my function and helper function you can see [examples](https://github.com/Wander03/stateasy/blob/main/R/slr.R) of my usage of tunneling, for the best example I would like to draw your attention to the create_scatter_plot() function, specifically the ggplot() code within it. Additionally this code has two helper function: create_scatter_plot() and test_assumptions(). The first is used to, well, create a scatter plot in my main function while the latter is used to test model assumptions, returning the necessary plots.
 
 ------------------------------------------------------------------------
 
@@ -489,7 +489,7 @@ I had never used tunneling prior to creating my funtion for my groups R package,
 #| include: false
 #| label: SD-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -500,7 +500,9 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification:
+
+For my groups package project, I was the person tasked with creating the [initial set-up](https://github.com/Wander03/stateasy/commit/f541e362752729b568ab7876b10e553189a63c48). To do so, I used the {usethis} package. The function I wrote ([slr()](https://github.com/Wander03/stateasy/blob/main/R/slr.R)), as well as its helper functions, all use {roxygen2} style commenting: describing what the function does, its input parameters, and return object, as well as what helper functions are imported from outside packages. I created [test cases](https://github.com/Wander03/stateasy/commit/53eec584b5154919406a4ed710b17786f7bc5f7b) using {testthat} for my function and helper functions, taking care to ensure the full scope of my return results are tested (especially for my test_assumptions() helper function). Lastly, I went through all of my group mates functions at the end to standardize our functions and their parameters naming conventions to create a more user-friendly package.
 
 ------------------------------------------------------------------------
 
@@ -645,6 +647,7 @@ I am writing this after I write the below learning objective, so back to lab 4! 
 ```{r}
 #| echo: false
 #| label: summary-graph
+#| message: false
 
 portfolio_levels %>%
   mutate(
@@ -656,9 +659,10 @@ portfolio_levels %>%
         y = (..count..)/sum(..count..)
         )
     ) +
-  geom_bar() +
+  geom_bar(fill = '#431840') +
   labs(x = "Level",
-       y = "Percent") +
+       y = "Percent",
+       title = "Proof I Deserve an A") +
   theme_bw() +
   scale_y_continuous(labels = scales::percent)
 ```
