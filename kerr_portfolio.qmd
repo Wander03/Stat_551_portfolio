@@ -294,6 +294,8 @@ Once again we return to [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-usi
 -   I can use API urls to access JSON data and convert it to a data frame
 
 ```{r, include = FALSE}
+#| include: false
+#| label: DM-3
 ## Fill in the line below with your self-assigned level for this objective.
 my_level <- 4
 
