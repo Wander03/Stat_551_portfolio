@@ -608,7 +608,7 @@ Oh, do I have the commit message for you: "[vectorized for loop](https://github.
 #| include: false
 #| label: CD-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -620,6 +620,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+To start, I did not write the code myself but was present and helping when the code was written. As I have previously explained, my group started the API lab (lab 3) during class with only Sean coding, and here we [converted the return](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/commit/5378423aa82733236e86415fb02bd7ccabf57d35) from the API (a json) to a data frame. [Another example](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/249dcf91d836b44aa8bd01af2be16e0d0316633c) of converting my data is from the cheese lab. Here, I take a list structure, using unlist() to convert it to a vector, then a combination of matrix() and data.frame() to convert the vector to a data frame. I believe one of my best built functions is my function from [lab 1 part 1](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part1.qmd). Throughout the function I save my rnorm() values as well as my sorted values in there own variables. This allows my ggplot() code to be more readable since we do not see rnorm() or sort() in the arguments. My only critique here would be I do not need to save the ggplot() output then do a return statement since R would have returned the plot automatically.
 
 ------------------------------------------------------------------------
 
