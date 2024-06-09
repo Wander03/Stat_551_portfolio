@@ -5,9 +5,6 @@ format:
     theme:
       light: flatly
       dark: darkly
-    other-links:
-      - text: Github Page
-      href: https://github.com/Wander03/Stat_551_portfolio
 editor: visual
 self-contained: true
 toc: true
