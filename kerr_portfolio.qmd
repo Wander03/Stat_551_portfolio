@@ -677,6 +677,6 @@ portfolio_levels %>%
 
 ## Grade
 
-Based on the summary plot above, I believe I have earned a \_\_\_ in STAT 541.
+Based on the summary plot above, I believe I have earned a A in STAT 541.
 
 ### Justification
