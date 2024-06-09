@@ -634,7 +634,7 @@ To start, I did not write the code myself but was present and helping when the c
 #| include: false
 #| label: CD-3
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -647,7 +647,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-I am writing this after I write the below learning objective, so back to lab 4! [My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) I wrote here is actually a helper function for looping through each country. By creating this helper function, my code is much cleaner than it would be otherwise.
+I am writing this after I write the below learning objective (this learning objective was moved, so ah-ha!), so back to lab 4! [My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) I wrote here is actually a helper function for looping through each country. By creating this helper function, my code is much cleaner than it would be otherwise. Additionally, my cheese lab code uses a helper function. My part, again, was to get specific details on a subset of cheeses. Rather then go and copy paste my retrieval code a bunch of times, I [created a function](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/249dcf91d836b44aa8bd01af2be16e0d0316633c)!
 
 ------------------------------------------------------------------------
 
