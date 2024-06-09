@@ -8,6 +8,7 @@ format:
 editor: visual
 self-contained: true
 toc: true
+toc-title: Learning Objectives
 ---
 
 ```{r}
@@ -46,7 +47,7 @@ portfolio_levels <- tibble(
 # 3 = mastery 
 # 4 = expert
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -58,6 +59,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Ok, so this may be the first learning objective, however it is the last one I am writing. Why? Well, in part , because I keep scrolling past it :). Lets see, I do not believe we learning how to use kable() in this class, and I implemented this wonderful table formatting library in the [cheese lab](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/490813ccf6eec4669397a46eb79c49d19ef65083)! In [my function](https://github.com/Wander03/stateasy/blob/main/R/slr.R) for my groups package, I used formula style outside of functions like lm() for the first time. One line 44 you can see me using as.formula() to convert a string to a formula, then right after I have update() if the intercept needs to be removed. Further down on line 85 I skip the middle man and use the data vectors to create a formula..
 
 ------------------------------------------------------------------------
 
@@ -187,7 +190,7 @@ My code, especially my functions, include comments (almost) line by line, as wel
 #| include: false
 #| label: TC-1
 
-my_level <- 2
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -200,7 +203,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-The only example I can think of for this (so far) is the [overview document](https://github.com/keasley8/Project_1_Shiny/blob/main/STAT541%20Project%20Workspace.docx) submitted with the Shiny Project. In this document, we summarize our data, data cleaning process, our files, and finally our app itself. Within the summary of the app, I summarized my contributions (which in turn were my contributions to this project)!
+~~The only example I can think of for this (so far) is~~ The [overview document](https://github.com/keasley8/Project_1_Shiny/blob/main/STAT541%20Project%20Workspace.docx) submitted with the Shiny Project. In this document, we summarize our data, data cleaning process, our files, and finally our app itself. Within the summary of the app, I summarized my contributions (which in turn were my contributions to this project)! Jumping forwards to the [generative art lab](https://github.com/Wander03/lab-9-generative-art/blob/main/lab-9.qmd), part of this lab was describing the code and how difference arguments affect the art. This is discussed more later, but, well, I do just that. An now jumping back a bit, while creating my function for my groups package I considered who would be using it. That is, introductary statistics students (ideally). Thus, I kept [my function](https://github.com/Wander03/stateasy/blob/main/R/slr.R) (Simple Linear Regression) inputs simple as well as the provided outputs.
 
 ------------------------------------------------------------------------
 
@@ -258,7 +261,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-In lab 2 I [read in a data set](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/11/commits/fb212a6e3a313e9c9f06aad6217345f425d8a140) containing country name and number so we could label our observations in our improved graphics. This data was an excel file with multiple sheets, so I had to pick the sheet and range of cells to read in, and label the column name since there were no column headers. Since all the countries and their respective number were all in one string (i.e. "1=US, 2=EU,..."), I needed to clean the column by splitting it into one observation per country (split on ,), then split the number and country into there own columns (split on =). Finally I filtered out a messy observation that appeared from this process and selected the two columns I needed.
+In lab 2 I [read in a data set](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/11/commits/fb212a6e3a313e9c9f06aad6217345f425d8a140) containing country name and number so we could label our observations in our improved graphics. This data was an excel file with multiple sheets, so I had to pick the sheet and range of cells to read in, and label the column name since there were no column headers. Since all the countries and their respective number were all in one string (i.e. "1=US, 2=EU,..."), I needed to clean the column by splitting it into one observation per country (split on ,), then split the number and country into there own columns (split on =). Finally I filtered out a messy observation that appeared from this process and selected the two columns I needed. For examples of reading in data sets I could reference practically any lab we did. Then again, in many labs we did either scrape the data, use an API, or generate the data ourselves... Anyways, as mentioned elsewhere the beginning of lab 3 was done by Sean with Ryan and I helping from the sidelines. This includes the [data read in](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/commit/5378423aa82733236e86415fb02bd7ccabf57d35) portion, where we used the here() library, read in data with different delimiters (aka not csv), and renamed/mutated difference columns.
 
 ------------------------------------------------------------------------
 
@@ -293,6 +296,8 @@ Once again we return to [lab 4](https://github.com/Cal-Poly-Advanced-R/lab-3-usi
 -   I can use API urls to access JSON data and convert it to a data frame
 
 ```{r, include = FALSE}
+#| include: false
+#| label: DM-3
 ## Fill in the line below with your self-assigned level for this objective.
 my_level <- 4
 
@@ -414,9 +419,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-\[ADD JUSTIFICATION FOR GGANIMATE WHEN YOU USE IT (I KNOW YOU WILL USE IT FUTURE ME\]
-
-For Lab 2, although I created the 2nd Visualization, I was the first to [create my graph](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37). For my team I pioneered the use of {ggirafe}, picking out how to create pop-up labels when hovering over data points and format them nicely. Looking at Katherines contributes later, you can see the same general formatting for [her use](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/18/commits/cd8b30c4b1b6a1803994a51dd4bd50f07a5d5c6d) of {ggirafe}. Additionally, I [improved upon the leaflet](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/23/commits/92e2348539c67414c64048518dffebfdfd1fb5bb) Kai created, adding labels on hover and setting the initial View.
+For Lab 2, although I created the 2nd Visualization, I was the first to [create my graph](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/12/commits/d43d83c056aa80774ebe7184c7967f9eadcd7f37). For my team I pioneered the use of {ggirafe}, picking out how to create pop-up labels when hovering over data points and format them nicely. Looking at Katherines contributes later, you can see the same general formatting for [her use](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/18/commits/cd8b30c4b1b6a1803994a51dd4bd50f07a5d5c6d) of {ggirafe}. Additionally, I [improved upon the leaflet](https://github.com/Cal-Poly-Advanced-R/lab-2-visualization-kchan78/pull/23/commits/92e2348539c67414c64048518dffebfdfd1fb5bb) Kai created, adding labels on hover and setting the initial View. I never went back to use {gganimate}, but if you want I could reference other classes where I used it ;)
 
 ------------------------------------------------------------------------
 
@@ -547,7 +550,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: AI-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -559,6 +562,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Hmmmm, I wonder what lab I should use for this... I know, the cheese la- I mean [generative art lab](https://github.com/Wander03/lab-9-generative-art/blob/main/lab-9.qmd)! For my first piece of fabulous art, I used ggplot() to create an incredibly visually pleasing egg. Meanwhile for my second piece, I used a couple functions (one which does use ggplot()) to create my favorite of the two pieces. Both art pieces have descriptions underneath detailing how different input parameters would change the art (along with an interesting description of the art itself).
 
 ------------------------------------------------------------------------
 
@@ -577,7 +582,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-1
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -590,6 +595,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
+Oh, do I have the commit message for you: "[vectorized for loop](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/commit/bb0f492cbda24bbe66170baeaa2b479bb1b62da7)." In class Sean was doing the coding while Ryan and I watched and though up what needed to be done. After seeing this for loop, although beautiful in its own way, I felt the urge to improve it. This commit shows the removal of a slow process, and the introduction of a vectorized process via pmap_dfr(). This was eventually switched to a different process once I learned the function was superseeded, but that is explained in a different learning objective. If you are looking for an example where I wrote the vectorized function myself, then look no further then the very beginning of the class! No, really, look at lab 1. Since it has been a while since I talked about lab 1 (at least in the order of writing these justification, who knows when you last read about it), I was in charge of [part 1](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part1.qmd), the Q-Q Plot Function. As noted in my description of the function, the input parameter x is *gasp* a vector. Furthermore within the function I use vectorized functions such as rnorm() and sort().
+
 ------------------------------------------------------------------------
 
 ## \[CD-2\] Object handling:
@@ -601,7 +608,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -614,6 +621,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
+To start, I did not write the code myself but was present and helping when the code was written. As I have previously explained, my group started the API lab (lab 3) during class with only Sean coding, and here we [converted the return](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/commit/5378423aa82733236e86415fb02bd7ccabf57d35) from the API (a json) to a data frame. [Another example](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/249dcf91d836b44aa8bd01af2be16e0d0316633c) of converting my data is from the cheese lab. Here, I take a list structure, using unlist() to convert it to a vector, then a combination of matrix() and data.frame() to convert the vector to a data frame. I believe one of my best built functions is my function from [lab 1 part 1](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part1.qmd). Throughout the function I save my rnorm() values as well as my sorted values in there own variables. This allows my ggplot() code to be more readable since we do not see rnorm() or sort() in the arguments. My only critique here would be I do not need to save the ggplot() output then do a return statement since R would have returned the plot automatically.
+
 ------------------------------------------------------------------------
 
 ## \[CD-3\] Supporting functions:
@@ -625,7 +634,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: CD-3
 
-my_level <- 3
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -638,7 +647,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Justification:
 
-I am writing this after I write the below learning objective, so back to lab 4! [My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) I wrote here is actually a helper function for looping through each country. By creating this helper function, my code is much cleaner than it would be otherwise.
+I am writing this after I write the below learning objective (this learning objective was moved, so ah-ha!), so back to lab 4! [My function](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/pull/6/files) I wrote here is actually a helper function for looping through each country. By creating this helper function, my code is much cleaner than it would be otherwise. Additionally, my cheese lab code uses a helper function. My part, again, was to get specific details on a subset of cheeses. Rather then go and copy paste my retrieval code a bunch of times, I [created a function](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/249dcf91d836b44aa8bd01af2be16e0d0316633c)!
 
 ------------------------------------------------------------------------
 
@@ -647,7 +656,7 @@ I am writing this after I write the below learning objective, so back to lab 4! 
 ```{r}
 #| echo: false
 #| label: summary-graph
-#| message: false
+#| warning: false
 
 portfolio_levels %>%
   mutate(
@@ -662,13 +671,16 @@ portfolio_levels %>%
   geom_bar(fill = '#431840') +
   labs(x = "Level",
        y = "Percent",
-       title = "Proof I Deserve an A") +
+       title = "Proof I Deserve an A",
+       subtitle = "Yes, I know, if I wasn't being lazy everything could have been a 4") +
   theme_bw() +
   scale_y_continuous(labels = scales::percent)
 ```
 
 ## Grade
 
-Based on the summary plot above, I believe I have earned a \_\_\_ in STAT 541.
+Based on the summary plot above, I believe I have earned a A in STAT 541.
 
-### Justification
+### Justification:
+
+Personally, I think the graph speaks for itself (both figuratively and literally), but lets see what I can add. I started with a strong base for this class taking STAT 150 with Dr. Bodwin and STAT 331 with you! This class not only reinforced what I learned in these classes, but build upon my skills. I learned how to use Github to save my work step by step, as well as how to take advantage Quarto. I take pride in being able to write clean, efficient, functions and craft useful visualizations, both of which are on full display in each and every lab (although not necessarily both at the same time). I took my first steps into creating Shiny Apps and Packages during this class. While the documentation of my groups package could use a bit of sprucing up, the other aspects are all up to par. Overall, I believe that I have a strong grasp on the material taught throughout the quarter, whether I learned it outside this class or during this class.
