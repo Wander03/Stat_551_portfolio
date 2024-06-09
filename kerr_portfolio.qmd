@@ -550,7 +550,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: AI-2
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -562,6 +562,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Hmmmm, I wonder what lab I should use for this... I know, the cheese la- I mean [generative art lab](https://github.com/Wander03/lab-9-generative-art/blob/main/lab-9.qmd)! For my first piece of fabulous art, I used ggplot() to create an incredibly visually pleasing egg. Meanwhile for my second piece, I used a couple functions (one which does use ggplot()) to create my favorite of the two pieces. Both art pieces have descriptions underneath detailing how different input parameters would change the art (along with an interesting description of the art itself).
 
 ------------------------------------------------------------------------
 
