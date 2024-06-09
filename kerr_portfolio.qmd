@@ -669,7 +669,8 @@ portfolio_levels %>%
   geom_bar(fill = '#431840') +
   labs(x = "Level",
        y = "Percent",
-       title = "Proof I Deserve an A") +
+       title = "Proof I Deserve an A",
+       subtitle = "Yes, I know, if I wasn't being lazy everything could have been a 4") +
   theme_bw() +
   scale_y_continuous(labels = scales::percent)
 ```
