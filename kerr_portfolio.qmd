@@ -683,4 +683,6 @@ portfolio_levels %>%
 
 Based on the summary plot above, I believe I have earned a A in STAT 541.
 
-### Justification
+### Justification:
+
+Personally, I think the graph speaks for itself (both figuratively and literally), but lets see what I can add. I started with a strong base for this class taking STAT 150 with Dr. Bodwin and STAT 331 with you! This class not only reinforced what I learned in these classes, but build upon my skills. I learned how to use Github to save my work step by step, as well as how to take advantage Quarto. I take pride in being able to write clean, efficient, functions and craft useful visualizations, both of which are on full display in each and every lab (although not necessarily both at the same time). I took my first steps into creating Shiny Apps and Packages during this class. While the documentation of my groups package could use a bit of sprucing up, the other aspects are all up to par. Overall, I believe that I have a strong grasp on the material taught throughout the quarter, whether I learned it outside this class or during this class.
