@@ -582,7 +582,7 @@ Hmmmm, I wonder what lab I should use for this... I know, the cheese la- I mean 
 #| include: false
 #| label: CD-1
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -594,6 +594,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Oh, do I have the commit message for you: "[vectorized for loop](https://github.com/Cal-Poly-Advanced-R/lab-3-using-apis-Ryan-DeStefano/commit/bb0f492cbda24bbe66170baeaa2b479bb1b62da7)." In class Sean was doing the coding while Ryan and I watched and though up what needed to be done. After seeing this for loop, although beautiful in its own way, I felt the urge to improve it. This commit shows the removal of a slow process, and the introduction of a vectorized process via pmap_dfr(). This was eventually switched to a different process once I learned the function was superseeded, but that is explained in a different learning objective. If you are looking for an example where I wrote the vectorized function myself, then look no further then the very beginning of the class! No, really, look at lab 1. Since it has been a while since I talked about lab 1 (at least in the order of writing these justification, who knows when you last read about it), I was in charge of [part 1](https://github.com/Cal-Poly-Advanced-R/lab-1-review-Wander03/blob/master/part1.qmd), the Q-Q Plot Function. As noted in my description of the function, the input parameter x is *gasp* a vector. Furthermore within the function I use vectorized functions such as rnorm() and sort().
 
 ------------------------------------------------------------------------
 
