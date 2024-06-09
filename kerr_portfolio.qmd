@@ -47,7 +47,7 @@ portfolio_levels <- tibble(
 # 3 = mastery 
 # 4 = expert
 
-my_level <- 1
+my_level <- 4
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -59,6 +59,8 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification:
+
+Ok, so this may be the first learning objective, however it is the last one I am writing. Why? Well, in part , because I keep scrolling past it :). Lets see, I do not believe we learning how to use kable() in this class, and I implemented this wonderful table formatting library in the [cheese lab](https://github.com/Cal-Poly-Advanced-R/introduction-to-webscraping-SPLeader/commit/490813ccf6eec4669397a46eb79c49d19ef65083)! In [my function](https://github.com/Wander03/stateasy/blob/main/R/slr.R) for my groups package, I used formula style outside of functions like lm() for the first time. One line 44 you can see me using as.formula() to convert a string to a formula, then right after I have update() if the intercept needs to be removed. Further down on line 85 I skip the middle man and use the data vectors to create a formula..
 
 ------------------------------------------------------------------------
 
