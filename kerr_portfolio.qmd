@@ -8,6 +8,7 @@ format:
 editor: visual
 self-contained: true
 toc: true
+toc-title: Learning Objectives
 ---
 
 ```{r}
