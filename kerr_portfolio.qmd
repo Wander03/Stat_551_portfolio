@@ -647,7 +647,7 @@ I am writing this after I write the below learning objective, so back to lab 4! 
 ```{r}
 #| echo: false
 #| label: summary-graph
-#| message: false
+#| warning: false
 
 portfolio_levels %>%
   mutate(
